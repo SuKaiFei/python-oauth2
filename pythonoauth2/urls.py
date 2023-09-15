@@ -16,9 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from pythonoauth2 import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('hw', views.hello_world),
     path('oauth2/', include('oauth2.urls')),
     path('o/', include('oauth2_provider.urls', namespace='oauth2_provider')),
 ]
