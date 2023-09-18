@@ -22,5 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('hw', views.hello_world),
     path('oauth2/', include('oauth2.urls')),
-    path('o/', include('oauth2_provider.urls', namespace='oauth2_provider')),
+    path('openapi/auth/', include('oauth2_provider.urls', namespace='oauth2_provider')),
 ]
