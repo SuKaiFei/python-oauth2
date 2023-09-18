@@ -3,7 +3,7 @@ from oauth2_provider.decorators import protected_resource
 import json
 
 
-@protected_resource(scopes=['groups'])
+@protected_resource(scopes=['import'])
 def hello_world(request):
     name = json.loads(request.body).get("name", "hello world")
     print("Random:", request.headers["Random"])

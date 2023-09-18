@@ -7,7 +7,6 @@ from cryptography.hazmat.backends import default_backend
 
 
 def encrypt_by_public_key(data: str, public_key_str):
-    print(data, public_key_str)
     public_key_bytes = base64.b64decode(public_key_str)
     key = serialization.load_der_public_key(public_key_bytes,
                                             backend=default_backend())
