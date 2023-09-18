@@ -1,13 +1,9 @@
-import json
 import random
 import string
 import time
 
 # pip install gmssl==3.2.2
-from gmssl import sm4, sm3
-# pip install requests==2.31.0
-from requests import request
-from oauth2.AuthorizationProvider import encrypt_by_public_key
+from gmssl import sm3
 
 
 def sm3_hash(message):
